@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin-top: 5vh;
+}
+
+.contenedor {
+    width: 90vw;
+    border-radius: 2vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pantalla {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    display: none;
+    flex-direction: column;
+    transition: left 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#pantalla1:checked~.pantalla1,
+#pantalla2:checked~.pantalla2,
+#pantalla3:checked~.pantalla3,
+#pantalla4:checked~.pantalla4,
+#pantallaIncorrecta:checked~.pantallaIncorrecta {
+    display: flex;
+}
+
+.marco {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+}
+
+.marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marco2 {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.marco2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.texto {
+    padding-top: 2vh;
+    font-size: 2.5vh;
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+.texto2 {
+    font-size: 2.5vh;
+    color: #333;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 2vw;
+}
+
+.boton {
+    padding: 1.5vh 5vw;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 1vw;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+.boton:active {
+    background-color: #004080;
+}
